@@ -346,7 +346,9 @@ git merge upstream/main
 **Ingeniero en Sistemas · Full Stack · Automatización · Data**
 
 - 📧 Email: zackharo1@gmail.com
+- 📱 WhatsApp: 098805517
 - 💻 GitHub: https://github.com/ieharo1
+- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
 
 ---
 
