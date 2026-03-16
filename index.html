@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-icon">🐙</span>
+                    <span class="logo-text">GitHub desde Cero</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#que-es">¿Qué es?</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>GitHub desde Cero</h1>
+            <p class="hero-subtitle">Guía completa para aprender GitHub desde fundamentos hasta conceptos avanzados.</p>
+            <div class="hero-buttons">
+                <a href="#que-es" class="btn btn-primary">Comenzar</a>
+                <a href="#ejemplos" class="btn btn-secondary">Ver ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Qué es GitHub? -->
+    <section id="que-es" class="section">
+        <div class="container">
+            <h2>¿Qué es GitHub?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">🐙</div>
+                    <h3>Plataforma de Desarrollo Colaborativo</h3>
+                    <p>GitHub es la plataforma más popular para alojar repositorios Git, colaborar en proyectos y gestionar el ciclo de vida del desarrollo de software.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Para Qué Sirve</h3>
+                    <p>Alojar código, colaborar en equipo, revisar código, gestionar proyectos, automatizar workflows y construir portafolio profesional.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Características Principales</h3>
+                    <p>Repositorios, Pull Requests, Issues, Actions, Projects, Wikis, Pages y integración con miles de herramientas.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>💡 ¿Sabías qué?</h4>
+                <p>GitHub fue fundado en 2008 y adquirido por Microsoft en 2018 por $7.5 mil millones. Alberga más de 100 millones de repositorios y 100 millones de desarrolladores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitectura -->
+    <section id="arquitectura" class="section section-alt">
+        <div class="container">
+            <h2>Ecosistema GitHub</h2>
+            <p class="section-intro">GitHub ofrece un ecosistema completo para el desarrollo colaborativo de software.</p>
+
+            <div class="architecture-diagram">
+                <div class="arch-layer">
+                    <h4>Desarrolladores</h4>
+                    <p>Tú y tu equipo</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>GitHub Platform</h4>
+                    <p>Repos, Issues, PRs, Actions</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>CI/CD Pipeline</h4>
+                    <p>GitHub Actions workflows</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Deploy</h4>
+                    <p>GitHub Pages, Packages, Cloud</p>
+                </div>
+            </div>
+
+            <div class="components-grid">
+                <div class="component-card">
+                    <h4>📊 Funcionalidades Core</h4>
+                    <ul>
+                        <li>Repositorios - Aloja tu código</li>
+                        <li>Pull Requests - Revisión de código</li>
+                        <li>Issues - Seguimiento de tareas</li>
+                        <li>Projects - Gestión ágil</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <h4>💾 Automatización</h4>
+                    <ul>
+                        <li>Actions - CI/CD nativo</li>
+                        <li>Webhooks - Integraciones</li>
+                        <li>API REST/GraphQL - Automatización</li>
+                        <li>Bots - GitHub Apps</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <h4>🔒 Colaboración</h4>
+                    <ul>
+                        <li>Organizaciones - Equipos</li>
+                        <li>Code Review - Comentarios</li>
+                        <li>Discussions - Comunidad</li>
+                        <li>Security - Vulnerabilidades</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temas -->
+    <section id="temas" class="section">
+        <div class="container">
+            <h2>Contenido del Curso</h2>
+            <div class="topics-grid">
+                <div class="topic-card" data-topic="1">
+                    <div class="topic-number">01</div>
+                    <h3>Introducción</h3>
+                    <p>Historia de GitHub, características principales y creación de cuenta.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="2">
+                    <div class="topic-number">02</div>
+                    <h3>Instalación</h3>
+                    <p>Configuración de Git, autenticación SSH y GitHub CLI.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="3">
+                    <div class="topic-number">03</div>
+                    <h3>Conceptos básicos</h3>
+                    <p>Repositorios, commits, branches y sincronización con remoto.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="4">
+                    <div class="topic-number">04</div>
+                    <h3>Ejemplos prácticos</h3>
+                    <p>Pull Requests, Issues, Projects y colaboración en equipo.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="5">
+                    <div class="topic-number">05</div>
+                    <h3>Buenas prácticas</h3>
+                    <p>README profesional, .gitignore, licencias y documentación.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="6">
+                    <div class="topic-number">06</div>
+                    <h3>Casos reales</h3>
+                    <p>GitHub Actions, Pages, Packages y workflows de producción.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="7">
+                    <div class="topic-number">07</div>
+                    <h3>Proyecto final</h3>
+                    <p>Proyecto completo con CI/CD, documentación y deploy.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos -->
+    <section id="ejemplos" class="section section-alt">
+        <div class="container">
+            <h2>Ejemplos de Código</h2>
+            <div class="examples-container">
+                <div class="example-card">
+                    <h4>Crear Repositorio</h4>
+                    <pre><code class="language-bash"># Usando GitHub CLI
+gh repo create mi-proyecto
+cd mi-proyecto
+
+# O manualmente en github.com
+# Luego clonar
+git clone https://github.com/usuario/mi-proyecto.git</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>Pull Request</h4>
+                    <pre><code class="language-bash"># Crear rama para feature
+git checkout -b feature/nueva-funcionalidad
+
+# Hacer cambios y commit
+git add .
+git commit -m "Add nueva funcionalidad"
+
+# Push y crear PR
+git push origin feature/nueva-funcionalidad
+gh pr create --title "Add nueva funcionalidad"</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>GitHub Actions</h4>
+                    <pre><code class="language-yaml">name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run tests
+        run: npm test</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>README.md</h4>
+                    <pre><code class="language-markdown"># Mi Proyecto
+
+Descripción del proyecto.
+
+## Instalación
+\`\`\`bash
+npm install
+\`\`\`
+
+## Uso
+\`\`\`bash
+npm start
+\`\`\`</code></pre>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver más ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GitHub desde Cero</h4>
+                    <p>Guía educativa completa para aprender GitHub desde los fundamentos hasta conceptos avanzados.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#que-es">¿Qué es?</a></li>
+                        <li><a href="#temas">Temas</a></li>
+                        <li><a href="#ejemplos">Ejemplos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://docs.github.com/" target="_blank">Docs Oficiales</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>👨‍💻 Desarrollado por <strong>Isaac Esteban Haro Torres</strong></p>
+                <p class="developer-info">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="developer-contact">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                </div>
+                <p class="copyright">© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
