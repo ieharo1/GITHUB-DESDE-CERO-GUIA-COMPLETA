@@ -614,3 +614,114 @@ body {
 .language-markdown .code {
     color: #d4d4d4;
 }
+
+/* Topic Content Styles */
+.topic-content-container {
+    margin-top: 3rem;
+}
+
+.content-detail {
+    display: none;
+    background: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: 100px;
+}
+
+.content-detail h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.content-detail h4 {
+    color: var(--primary-dark);
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.content-body p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.content-body ul, .content-body ol {
+    margin: 1rem 0 1rem 2rem;
+    line-height: 1.8;
+}
+
+.content-body li {
+    margin-bottom: 0.5rem;
+}
+
+.content-body pre {
+    background: var(--dark-bg);
+    color: #f8f8f2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.content-body code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.content-body a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.content-body a:hover {
+    text-decoration: underline;
+}
+
+.info-box {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+    border-left: 4px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.info-box strong {
+    color: var(--primary-dark);
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: var(--light-bg);
+    color: var(--primary-color);
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-back:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.topic-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.topic-link:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}

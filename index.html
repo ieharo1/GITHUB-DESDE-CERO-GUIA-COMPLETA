@@ -142,43 +142,229 @@
                     <div class="topic-number">01</div>
                     <h3>Introducción</h3>
                     <p>Historia de GitHub, características principales y creación de cuenta.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema1-1" class="topic-link">Ver tema →</a>
                 </div>
                 <div class="topic-card" data-topic="2">
                     <div class="topic-number">02</div>
                     <h3>Instalación</h3>
                     <p>Configuración de Git, autenticación SSH y GitHub CLI.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema1-2" class="topic-link">Ver tema →</a>
                 </div>
                 <div class="topic-card" data-topic="3">
                     <div class="topic-number">03</div>
                     <h3>Conceptos básicos</h3>
                     <p>Repositorios, commits, branches y sincronización con remoto.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema1-3" class="topic-link">Ver tema →</a>
                 </div>
                 <div class="topic-card" data-topic="4">
                     <div class="topic-number">04</div>
                     <h3>Ejemplos prácticos</h3>
                     <p>Pull Requests, Issues, Projects y colaboración en equipo.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema2-1" class="topic-link">Ver tema →</a>
                 </div>
                 <div class="topic-card" data-topic="5">
                     <div class="topic-number">05</div>
                     <h3>Buenas prácticas</h3>
                     <p>README profesional, .gitignore, licencias y documentación.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema2-2" class="topic-link">Ver tema →</a>
                 </div>
                 <div class="topic-card" data-topic="6">
                     <div class="topic-number">06</div>
                     <h3>Casos reales</h3>
                     <p>GitHub Actions, Pages, Packages y workflows de producción.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema3-1" class="topic-link">Ver tema →</a>
                 </div>
                 <div class="topic-card" data-topic="7">
                     <div class="topic-number">07</div>
                     <h3>Proyecto final</h3>
                     <p>Proyecto completo con CI/CD, documentación y deploy.</p>
-                    <a href="#" class="topic-link">Ver tema →</a>
+                    <a href="#tema3-2" class="topic-link">Ver tema →</a>
+                </div>
+            </div>
+
+            <!-- Contenido Detallado de Temas -->
+            <div class="topic-content-container">
+                <div class="content-detail" id="tema1-1">
+                    <h3>🐙 Introducción a GitHub</h3>
+                    <div class="content-body">
+                        <p><strong>GitHub</strong> es la plataforma más popular para alojar repositorios Git, colaborar en proyectos y gestionar el ciclo de vida del desarrollo de software.</p>
+                        <h4>Historia:</h4>
+                        <p>GitHub fue fundado en 2008 y adquirido por Microsoft en 2018 por $7.5 mil millones. Alberga más de 100 millones de repositorios y desarrolladores.</p>
+                        <h4>Características Principales:</h4>
+                        <ul>
+                            <li><strong>Repositorios:</strong> Aloja tu código con control de versiones</li>
+                            <li><strong>Pull Requests:</strong> Revisión y discusión de cambios</li>
+                            <li><strong>Issues:</strong> Seguimiento de tareas y bugs</li>
+                            <li><strong>Actions:</strong> CI/CD nativo integrado</li>
+                        </ul>
+                        <div class="info-box">
+                            <strong>💡 ¿Sabías qué?</strong>
+                            <p>GitHub es la plataforma de desarrollo más grande del mundo, usada por empresas como Google, Facebook y miles de proyectos open source.</p>
+                        </div>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema1-2">
+                    <h3>🔧 Configuración e Instalación</h3>
+                    <div class="content-body">
+                        <h4>Instalar Git:</h4>
+                        <pre><code># Windows: Descargar desde git-scm.com
+# macOS
+brew install git
+# Linux
+sudo apt-get install git</code></pre>
+                        <h4>Configurar Usuario:</h4>
+                        <pre><code>git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"</code></pre>
+                        <h4>Autenticación SSH:</h4>
+                        <pre><code># Generar clave SSH
+ssh-keygen -t ed25519 -C "tu@email.com"
+
+# Agregar al agente SSH
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+# Copiar clave pública
+cat ~/.ssh/id_ed25519.pub</code></pre>
+                        <h4>GitHub CLI:</h4>
+                        <pre><code># Instalar
+brew install gh  # macOS
+sudo apt install gh  # Linux
+
+# Autenticar
+gh auth login</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema1-3">
+                    <h3>📦 Conceptos Básicos</h3>
+                    <div class="content-body">
+                        <h4>Crear Repositorio:</h4>
+                        <pre><code># Desde GitHub.com: Click en "New repository"
+# O desde CLI
+gh repo create mi-proyecto
+cd mi-proyecto</code></pre>
+                        <h4>Comandos Esenciales:</h4>
+                        <pre><code># Clonar repositorio
+git clone https://github.com/usuario/repo.git
+
+# Ver estado
+git status
+
+# Agregar y commitear
+git add .
+git commit -m "Mensaje descriptivo"
+
+# Push a remoto
+git push origin main</code></pre>
+                        <h4>Trabajar con Branches:</h4>
+                        <pre><code># Crear y cambiar de rama
+git checkout -b feature/nueva
+
+# Push de la rama
+git push -u origin feature/nueva</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema2-1">
+                    <h3>🔄 Pull Requests y Colaboración</h3>
+                    <div class="content-body">
+                        <h4>Crear Pull Request:</h4>
+                        <pre><code># Desde CLI
+gh pr create --title "Add nueva feature" --body "Descripción de los cambios"
+
+# O desde github.com: Click en "New Pull Request"</code></pre>
+                        <h4>Proceso de Code Review:</h4>
+                        <ul>
+                            <li>Revisar los cambios archivo por archivo</li>
+                            <li>Dejar comentarios específicos</li>
+                            <li>Solicitar cambios si es necesario</li>
+                            <li>Aprobar cuando esté listo</li>
+                        </ul>
+                        <h4>Issues y Projects:</h4>
+                        <p>Usa Issues para reportar bugs y Features. Projects para gestión ágil tipo Kanban.</p>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema2-2">
+                    <h3>✅ Buenas Prácticas</h3>
+                    <div class="content-body">
+                        <h4>README Profesional:</h4>
+                        <pre><code># Nombre del Proyecto
+
+Descripción clara y concisa.
+
+## Instalación
+\`\`\`bash
+npm install
+\`\`\`
+
+## Uso
+\`\`\`bash
+npm start
+\`\`\`
+
+## Licencia
+MIT</code></pre>
+                        <h4>.gitignore:</h4>
+                        <p>Excluye node_modules, .env, dist, archivos del sistema.</p>
+                        <h4>Licencias:</h4>
+                        <ul>
+                            <li><strong>MIT:</strong> Permisiva, uso libre</li>
+                            <li><strong>Apache 2.0:</strong> Con patente</li>
+                            <li><strong>GPL:</strong> Copyleft, derivados deben ser open source</li>
+                        </ul>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-1">
+                    <h3>🚀 GitHub Actions y CI/CD</h3>
+                    <div class="content-body">
+                        <h4>Workflow Básico:</h4>
+                        <pre><code>name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install
+        run: npm install
+      - name: Test
+        run: npm test</code></pre>
+                        <h4>GitHub Pages:</h4>
+                        <p>Deploy automático de sitios estáticos desde una rama gh-pages.</p>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-2">
+                    <h3>📋 Proyecto Final</h3>
+                    <div class="content-body">
+                        <p>Desarrolla un proyecto completo en GitHub:</p>
+                        <ol>
+                            <li>Crear repositorio con README profesional</li>
+                            <li>Configurar .gitignore y licencia</li>
+                            <li>Crear branches para features</li>
+                            <li>Implementar CI/CD con Actions</li>
+                            <li>Usar Issues para tracking</li>
+                            <li>Deploy con GitHub Pages</li>
+                        </ol>
+                        <div class="info-box">
+                            <strong>💡 Proyecto sugerido:</strong>
+                            <p>Crea un portafolio personal con CI/CD, documentación completa y deploy automático.</p>
+                        </div>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
             </div>
         </div>
