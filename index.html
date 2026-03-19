@@ -134,56 +134,57 @@
     </section>
 
     <!-- Temas -->
-    <section id="temas" class="section">
+    <section id="temas" class="topics">
         <div class="container">
-            <h2>Contenido del Curso</h2>
+            <h2>📖 Temas del Curso</h2>
+            <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+            
             <div class="topics-grid">
-                <div class="topic-card" data-topic="1">
-                    <div class="topic-number">01</div>
-                    <h3>Introducción</h3>
-                    <p>Historia de GitHub, características principales y creación de cuenta.</p>
-                    <a href="#tema1-1" class="topic-link">Ver tema →</a>
+                <div class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🐙</span>
+                        <h3>Módulo 1: Fundamentos</h3>
+                    </div>
+                    <ul class="topic-list">
+                        <li><a href="#tema1-1">Introducción a GitHub</a></li>
+                        <li><a href="#tema1-2">Configuración e Instalación</a></li>
+                        <li><a href="#tema1-3">Conceptos básicos</a></li>
+                        <li><a href="#tema1-4">Primeros Pasos</a></li>
+                    </ul>
+                    <a href="#tema1-1" class="btn-topic">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="2">
-                    <div class="topic-number">02</div>
-                    <h3>Instalación</h3>
-                    <p>Configuración de Git, autenticación SSH y GitHub CLI.</p>
-                    <a href="#tema1-2" class="topic-link">Ver tema →</a>
+
+                <div class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">⚙️</span>
+                        <h3>Módulo 2: Intermedio</h3>
+                    </div>
+                    <ul class="topic-list">
+                        <li><a href="#tema2-1">Ejemplos prácticos</a></li>
+                        <li><a href="#tema2-2">Buenas prácticas</a></li>
+                        <li><a href="#tema2-3">Pull Requests y Issues</a></li>
+                        <li><a href="#tema2-4">Colaboración en Equipo</a></li>
+                    </ul>
+                    <a href="#tema2-1" class="btn-topic">Ver tema →</a>
                 </div>
-                <div class="topic-card" data-topic="3">
-                    <div class="topic-number">03</div>
-                    <h3>Conceptos básicos</h3>
-                    <p>Repositorios, commits, branches y sincronización con remoto.</p>
-                    <a href="#tema1-3" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card" data-topic="4">
-                    <div class="topic-number">04</div>
-                    <h3>Ejemplos prácticos</h3>
-                    <p>Pull Requests, Issues, Projects y colaboración en equipo.</p>
-                    <a href="#tema2-1" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card" data-topic="5">
-                    <div class="topic-number">05</div>
-                    <h3>Buenas prácticas</h3>
-                    <p>README profesional, .gitignore, licencias y documentación.</p>
-                    <a href="#tema2-2" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card" data-topic="6">
-                    <div class="topic-number">06</div>
-                    <h3>Casos reales</h3>
-                    <p>GitHub Actions, Pages, Packages y workflows de producción.</p>
-                    <a href="#tema3-1" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card" data-topic="7">
-                    <div class="topic-number">07</div>
-                    <h3>Proyecto final</h3>
-                    <p>Proyecto completo con CI/CD, documentación y deploy.</p>
-                    <a href="#tema3-2" class="topic-link">Ver tema →</a>
+
+                <div class="topic-card">
+                    <div class="topic-header">
+                        <span class="topic-icon">🚀</span>
+                        <h3>Módulo 3: Avanzado</h3>
+                    </div>
+                    <ul class="topic-list">
+                        <li><a href="#tema3-1">Casos reales</a></li>
+                        <li><a href="#tema3-2">Proyecto final</a></li>
+                        <li><a href="#tema3-3">GitHub Actions</a></li>
+                        <li><a href="#tema3-4">GitHub Pages y Deploy</a></li>
+                    </ul>
+                    <a href="#tema3-1" class="btn-topic">Ver tema →</a>
                 </div>
             </div>
 
             <!-- Contenido Detallado de Temas -->
-            <div class="topic-content-container">
+            <div class="topic-content">
                 <div class="content-detail" id="tema1-1">
                     <h3>🐙 Introducción a GitHub</h3>
                     <div class="content-body">
@@ -366,6 +367,168 @@ jobs:
                     </div>
                     <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
+                <div class="content-detail" id="tema1-4">
+                    <h3>🔀 Forks y Pull Requests</h3>
+                    <div class="content-body">
+                        <h4>Trabajar con Forks:</h4>
+                        <pre><code># Forkear desde github.com
+# Clonar tu fork
+git clone https://github.com/tu-user/repo.git
+
+# Agregar upstream
+git remote add upstream https://github.com/original/repo.git
+
+# Sincronizar
+git fetch upstream
+git merge upstream/main</code></pre>
+                        <h4>Pull Requests Detallados:</h4>
+                        <pre><code># Título descriptivo
+feat: agregar autenticación con JWT
+
+# Body del PR
+## Descripción
+- Login con JWT
+- Refresh tokens
+- Logout
+
+## Tipo de cambio
+- [ ] Bug fix
+- [x] New feature
+- [ ] Breaking change</code></pre>
+                        <h4>Mantener PR Actualizado:</h4>
+                        <pre><code>git fetch upstream
+git rebase upstream/main
+git push --force-with-lease</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema2-3">
+                    <h3>🐛 Issues y Proyectos</h3>
+                    <div class="content-body">
+                        <h4>Crear Issues:</h4>
+                        <pre><code>## Formato de Issue
+### Descripción
+Bug encontrado en el login
+
+### Pasos para reproducir
+1. Ir a /login
+2. Ingresar credenciales
+3. Error en consola
+
+### Comportamiento esperado
+Redirigir al dashboard
+
+### Labels
+bug, priority: high, good first issue</code></pre>
+                        <h4>GitHub Projects:</h4>
+                        <ul>
+                            <li>Tableros Kanban automáticos</li>
+                            <li>Campos personalizados</li>
+                            <li>Automation rules</li>
+                            <li>Integración con Issues y PRs</li>
+                        </ul>
+                        <h4>Milestones:</h4>
+                        <pre><code># Cerrar issues automáticamente
+closes #123
+fixes #456
+resolves #789</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema2-4">
+                    <h3>🔒 Seguridad y Gestión de Accesos</h3>
+                    <div class="content-body">
+                        <h4>Tokens y SSH:</h4>
+                        <pre><code># Token de acceso personal (PAT)
+gh auth token
+
+# Generar nuevo token
+gh auth login --with-token < token.txt</code></pre>
+                        <h4>Organizations y Teams:</h4>
+                        <pre><code># Ver equipos
+gh team list
+
+# Miembros del equipo
+gh team members list --team nombre</code></pre>
+                        <h4>Dependabot:</h4>
+                        <pre><code># .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"</code></pre>
+                        <h4>Code Scanning:</h4>
+                        <p>GitHub Advanced Security incluye scanning de vulnerabilidades automáticamente.</p>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-3">
+                    <h3>📦 GitHub Packages y Releases</h3>
+                    <div class="content-body">
+                        <h4>Releases:</h4>
+                        <pre><code># Crear release desde CLI
+gh release create v1.0.0 \
+  --title "Versión 1.0.0" \
+  --notes "Primera versión estable"
+
+# Release con archivos
+gh release create v1.0.0 \
+  --generate-notes \
+  assets/mi-app.zip</code></pre>
+                        <h4>GitHub Packages:</h4>
+                        <pre><code># Publicar package
+npm publish
+
+# Configurar Registry
+npm config set registry https://npm.pkg.github.com</code></pre>
+                        <h4>Descargar Releases:</h4>
+                        <pre><code>gh release download v1.0.0 --pattern "*.exe"</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-4">
+                    <h3>🚀 GitHub Advanced Features</h3>
+                    <div class="content-body">
+                        <h4>GitHub Actions Avanzado:</h4>
+                        <pre><code>name: Deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy
+        run: |
+          echo "Deploying..."
+          # comandos de deploy
+
+      - name: Notify
+        if: failure()
+        uses: slack-send@1</code></pre>
+                        <h4>Reusable Workflows:</h4>
+                        <pre><code># .github/workflows/reusable.yml
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string</code></pre>
+                        <h4>GitHub API:</h4>
+                        <pre><code>gh api repos/{owner}/{repo}/issues</code></pre>
+                        <h4>GitHub Codespaces:</h4>
+                        <p>IDE en la nube con VS Code, preconfigurado para tu proyecto.</p>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
             </div>
         </div>
     </section>
@@ -433,40 +596,23 @@ npm start
         </div>
     </section>
 
-    <!-- Footer -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>GitHub desde Cero</h4>
-                    <p>Guía educativa completa para aprender GitHub desde los fundamentos hasta conceptos avanzados.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#que-es">¿Qué es?</a></li>
-                        <li><a href="#temas">Temas</a></li>
-                        <li><a href="#ejemplos">Ejemplos</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Recursos</h4>
-                    <ul>
-                        <li><a href="https://docs.github.com/" target="_blank">Docs Oficiales</a></li>
-                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>👨‍💻 Desarrollado por <strong>Isaac Esteban Haro Torres</strong></p>
-                <p class="developer-info">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
-                <div class="developer-contact">
-                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
-                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
-                </div>
-                <p class="copyright">© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
-            </div>
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
         </div>
     </footer>
 
